@@ -39,6 +39,19 @@ See the Docker documentation to see how you need to use the -v flag and other fl
 
 You can also do training and all the other operations you'd normally run with an ocropy installation.
 
+## Models
+
+By default, docker-ocropy ships with the models
+[ocropy/en-default](https://data.bib.uni-mannheim/json/ocropy/en-default) and
+[ocropy/fraktur](https://data.bib.uni-mannheim/json/ocropy/fraktur). These are found in
+`/models`, i.e. use
+
+```sh
+docker run --rm -it kbai/ocropy ocropus-rpred -m en-default.pyrnn.gz ...
+# or
+docker run --rm -it kbai/ocropy ocropus-rpred -m /models/en-default.pyrnn.gz ...
+```
+
 ## Train it
 
 Use the [`ocrotrain.sh`](./ocrotrain.sh) script to see how to train the engine:

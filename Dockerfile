@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Konstantin Baierer <konstantin.baierer@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 # ENV MODEL_REPOSITORY http://www.tmbdev.net/ocropy/
-ENV MODEL_REPOSITORY http://www-test.bib.uni-mannheim.de/infolis/ocropy
+ENV MODEL_REPOSITORY http://data.bib.uni-mannheim.de/ocr-models/zip/ocropy/
 
 RUN apt-get update && \
   apt-get -y install --no-install-recommends git ca-certificates curl && \

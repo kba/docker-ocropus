@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM resin/rpi-raspbian
 MAINTAINER Konstantin Baierer <konstantin.baierer@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 

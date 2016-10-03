@@ -8,7 +8,6 @@ RUN apt-get update && \
     git clone --depth 1 'https://github.com/kba/ocr-models-client' /ocr-models-client && \
     cd /ocropy && \
         /ocr-models-client/ocr-models download -d models 'ocropy/en-default' 'ocropy/fraktur' && \
-        sed -i -e 's/firefox//' -e 's/python-opencv//' PACKAGES && \
         apt-get install -y $(cat PACKAGES) && \
         python setup.py install && \
         apt-get -y remove --purge --auto-remove git wget unzip && \
